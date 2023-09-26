@@ -1,1 +1,1 @@
-# Grundlagen_in_Cmake
+# Grundlagen_in_CMake

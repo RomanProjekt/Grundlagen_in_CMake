@@ -1,0 +1,10 @@
+^C:\USERS\ROMAN\DESKTOP\CMAKE_EXAMPLE_01\BUILD\CMAKEFILES\ED1641491DFE186CB006D67FA3C3CAE2\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/roman/Desktop/CMake_Example_01 -BC:/Users/roman/Desktop/CMake_Example_01/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/roman/Desktop/CMake_Example_01/build/Mein Hello World projekt.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
